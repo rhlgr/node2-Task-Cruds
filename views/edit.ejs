@@ -1,0 +1,10 @@
+<%-include('header') %>
+<%-include('nav') %>
+<h1 class="mx-5 my-5">CROMA</h1>
+<form action="/update/<%=task.id%>" class="form-control container w-25 my-3" method="post">
+    <h1>Update <span class="text-success">Task...</span></h1>
+    <input type="text" value="<%=task.title%>" class="form-control my-3" placeholder="Title" name="title">
+    <textarea name="dec" class="form-control my-3" placeholder="Description here" ></textarea>
+    <button class="btn btn-success my-3">Update Task</button>
+</form>
+<%-include('footer') %>
